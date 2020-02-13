@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+         <style>
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+
+            /* navigation menu */
+            nav {
+                background: rgb(239, 80, 41);
+                margin-bottom: 20px;
+                display: flex;
+                padding: 10px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar img {
+                width: 200px;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            .interests header {
+                font-size: 1.25em;
+            }
+        </style>
+        <title>Dakota's First Website</title>
+    </head>
+    <body>
+        <div id="all-contents"> 
+            <nav>
+                <header>Baby Yoda</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="sidebar">
+                    <img src="data:image/jpeg;base64,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">
+                </div>
+                <div class="content">
+                    <header>Dakota Vidrine</header>
+                    <p>15. Student at Acadiana High School</p>
+                </div>
+                <section class="interests">
+                    <ul>
+                        <li>gaming</li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
